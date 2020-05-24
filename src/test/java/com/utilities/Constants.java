@@ -1,6 +1,6 @@
 package com.utilities;
 
-public class Constant {
+public class Constants {
 
 	public static final String WEB_URL = new PropertyManager().getInstance().getWebUrl();
 

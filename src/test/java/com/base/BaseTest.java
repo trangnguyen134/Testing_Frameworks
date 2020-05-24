@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
-import com.utilities.Constant;
+import com.utilities.Constants;
 import com.utilities.Log4j;
 import com.utilities.ResourceManager;
 import com.utilities.TestUtils;
@@ -53,7 +53,7 @@ public class BaseTest {
 		this.setDriver();
 
 		/* LOG START TEST CASE */
-		Log4j.startTestCase(className, TestUtils.OS_NAME, Constant.BROWSER);
+		Log4j.startTestCase(className, TestUtils.OS_NAME, Constants.BROWSER);
 
 		softAssert = new SoftAssert();
 
@@ -62,7 +62,7 @@ public class BaseTest {
 	public void setDriver() {
 
 		/* INITIATE WEB BROWSER TO EXECUTE TEST */
-		switch (Constant.BROWSER.toLowerCase()) {
+		switch (Constants.BROWSER.toLowerCase()) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 
@@ -108,11 +108,11 @@ public class BaseTest {
 		/* END: WEB BROWSER TO EXECUTE TEST */
 
 		/* Launch web application */
-		driver.get(Constant.WEB_URL);
-		Log4j.info("Lauching: " + Constant.WEB_URL);
+		driver.get(Constants.WEB_URL);
+		Log4j.info("Lauching: " + Constants.WEB_URL);
 
 		/* Maximize window of the web application */
-		if (Constant.MAXIMIZE_WINDOW.equalsIgnoreCase("true")) {
+		if (Constants.MAXIMIZE_WINDOW.equalsIgnoreCase("true")) {
 			driver.manage().window().maximize();
 		}
 		Log4j.info("Maximize window to execute");
@@ -122,12 +122,12 @@ public class BaseTest {
 		Log4j.info("Delete all cookies");
 
 		/* Add implicitly wait */
-		driver.manage().timeouts().implicitlyWait(Constant.IMPLICITLY_WAIT, TimeUnit.SECONDS);
-		Log4j.info("Implicit wait applied on the driver for: " + Constant.IMPLICITLY_WAIT);
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITLY_WAIT, TimeUnit.SECONDS);
+		Log4j.info("Implicit wait applied on the driver for: " + Constants.IMPLICITLY_WAIT);
 
 	}
 
-	// @AfterClass
+	 @AfterClass
 	public void tearDown() {
 
 		/* Collect test result */
@@ -151,7 +151,7 @@ public class BaseTest {
 
 	/* Add main class for debugging purpose. Will remove when completes */
 	public static void main(String[] args) {
-		System.out.println("Web Browser to execute: " + Constant.BROWSER);
-		System.out.println("Web Application to execute: " + Constant.WEB_URL);
+		System.out.println("Web Browser to execute: " + Constants.BROWSER);
+		System.out.println("Web Application to execute: " + Constants.WEB_URL);
 	}
 }
