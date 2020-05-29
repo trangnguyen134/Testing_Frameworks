@@ -127,18 +127,10 @@ public class BaseTest {
 
 	}
 
-	 @AfterClass
-	public void tearDown() {
-
-		/* Collect test result */
+	@AfterClass
+	public static void CleanUp() {
 		softAssert.assertAll();
-
-		/* Close application */
-		if (driver != null) {
-			driver.quit();
-		}
-		Log4j.info("Closing application");
-
+		driver.quit();
 	}
 
 	/*** LOG4J: SET LOG FILE NAME ***/
@@ -151,7 +143,9 @@ public class BaseTest {
 
 	/* Add main class for debugging purpose. Will remove when completes */
 	public static void main(String[] args) {
+		String dataFilePath = new ResourceManager().getDATASET_SPREADSHEET_PATH();
 		System.out.println("Web Browser to execute: " + Constants.BROWSER);
 		System.out.println("Web Application to execute: " + Constants.WEB_URL);
+		System.out.println("File Path is: " + dataFilePath);
 	}
 }
