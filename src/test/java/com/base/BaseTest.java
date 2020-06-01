@@ -14,9 +14,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.utilities.Constants;
@@ -59,6 +58,7 @@ public class BaseTest {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	public void setDriver() {
 
 		/* INITIATE WEB BROWSER TO EXECUTE TEST */
@@ -108,9 +108,10 @@ public class BaseTest {
 		/* END: WEB BROWSER TO EXECUTE TEST */
 
 		/* Launch web application */
-		driver.get(Constants.WEB_URL);
-		Log4j.info("Lauching: " + Constants.WEB_URL);
 
+		/*
+		 * driver.get(Constants.WEB_URL); Log4j.info("Lauching: " + Constants.WEB_URL);
+		 */
 		/* Maximize window of the web application */
 		if (Constants.MAXIMIZE_WINDOW.equalsIgnoreCase("true")) {
 			driver.manage().window().maximize();
@@ -128,9 +129,10 @@ public class BaseTest {
 	}
 
 	@AfterClass
-	public static void CleanUp() {
+	public static void closeBrowser() {
 		softAssert.assertAll();
 		driver.quit();
+		Log4j.endTestCase();
 	}
 
 	/*** LOG4J: SET LOG FILE NAME ***/

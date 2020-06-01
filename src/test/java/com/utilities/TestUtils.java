@@ -39,9 +39,10 @@ public class TestUtils extends BaseTest {
 	 */
 
 	public Object[][] getTestData(String sheetName) {
-		//String dataFilePath = new ResourceManager().getDATASET_SPREADSHEET_PATH();
-		
-		String dataFilePath = "D:\\Ammie\\Study\\Selenium_Cert\\EclipseRepo\\Testing_Frameworks\\src\\test\\resources\\TestData.xlsx";
+		String dataFilePath = new ResourceManager().getDATASET_SPREADSHEET_PATH();
+
+		// String dataFilePath =
+		// "D:\\Ammie\\Study\\Selenium_Cert\\EclipseRepo\\Testing_Frameworks\\src\\test\\resources\\TestData.xlsx";
 
 		FileInputStream file = null;
 
@@ -67,13 +68,13 @@ public class TestUtils extends BaseTest {
 			runFlag.add(sheet.getRow(i + 1).getCell(0).toString());
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				// Get content of each cell and store to each array element.
-				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				// data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				data[i][k] = sheet.getRow(i + 1).getCell(k).getStringCellValue();
 			}
 		}
 		return data;
 	}
 
-	
 	/*** END OF DATA DRIVER TESTING IMPLEMENTATION ***/
 
 	/*** GET METHOD METHOD IMPLEMENTATION ***/

@@ -1,104 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-29T16:03:02Z" name="Default suite" finished-at="2020-05-29T16:03:03Z" duration-ms="1077">
+  <suite started-at="2020-06-01T06:55:46Z" name="Default suite" finished-at="2020-06-01T07:00:06Z" duration-ms="259807">
     <groups>
     </groups>
-    <test started-at="2020-05-29T16:03:02Z" name="Default test" finished-at="2020-05-29T16:03:03Z" duration-ms="1077">
+    <test started-at="2020-06-01T06:55:46Z" name="Default test" finished-at="2020-06-01T07:00:06Z" duration-ms="259807">
       <class name="com.testCases.VerifyLogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.VerifyLogIn@478190fc]" started-at="2020-05-29T16:03:02Z" name="setUp" finished-at="2020-05-29T16:03:02Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:55:46Z" name="setUp" finished-at="2020-06-01T06:55:53Z" duration-ms="6966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@478190fc]" started-at="2020-05-29T16:03:03Z" name="testRunner" data-provider="getTestDataSet" finished-at="2020-05-29T16:03:03Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at com.utilities.TestUtils.getTestData(TestUtils.java:64)
-at com.testCases.VerifyLogIn.getTestDataSet(VerifyLogIn.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:55:54Z" name="setup" finished-at="2020-06-01T06:56:11Z" duration-ms="17328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:11Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-01T06:56:14Z" duration-ms="2821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr262644]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ahudume]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRunner -->
-        <test-method is-config="true" signature="CleanUp()[pri:0, instance:com.testCases.VerifyLogIn@478190fc]" started-at="2020-05-29T16:03:03Z" name="CleanUp" finished-at="2020-05-29T16:03:03Z" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.base.BaseTest.CleanUp(BaseTest.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:14Z" name="tearDown" finished-at="2020-06-01T06:56:14Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CleanUp -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.testCases.VerifyLogIn@478190fc]" started-at="2020-05-29T16:03:03Z" name="cleanUp" finished-at="2020-05-29T16:03:03Z" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:14Z" name="setup" finished-at="2020-06-01T06:56:51Z" duration-ms="37477" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanUp -->
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:51Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-01T06:56:52Z" duration-ms="863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:52Z" name="tearDown" finished-at="2020-06-01T06:56:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:56:52Z" name="setup" finished-at="2020-06-01T06:58:07Z" duration-ms="75265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:58:07Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-01T06:58:08Z" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:58:08Z" name="setup" finished-at="2020-06-01T07:00:01Z" duration-ms="113098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T06:58:08Z" name="tearDown" finished-at="2020-06-01T06:58:08Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T07:00:01Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-01T07:00:03Z" duration-ms="1390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T07:00:03Z" name="tearDown" finished-at="2020-06-01T07:00:03Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testCases.VerifyLogIn@31304f14]" started-at="2020-06-01T07:00:03Z" name="closeBrowser" finished-at="2020-06-01T07:00:06Z" duration-ms="3054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.testCases.VerifyLogIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

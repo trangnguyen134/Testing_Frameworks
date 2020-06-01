@@ -1,0 +1,15 @@
+2020-05-31 21:47:35 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-05-31 21:47:37 INFO  Log4j:43 - Maximize window to execute
+2020-05-31 21:47:37 INFO  Log4j:43 - Delete all cookies
+2020-05-31 21:47:37 INFO  Log4j:43 - Implicit wait applied on the driver for: 60
+2020-05-31 21:47:37 INFO  Log4j:19 - ****************************************************************************************
+2020-05-31 21:47:37 INFO  Log4j:21 - $$$$$$$$$$$$$$$$$$$$$            com.testCases.VerifyLogIn       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-05-31 21:47:37 INFO  Log4j:23 - $$$$$$$$$$$$$$$$$$$$$            windows 10       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-05-31 21:47:37 INFO  Log4j:25 - $$$$$$$$$$$$$$$$$$$$$            chrome       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-05-31 21:47:37 INFO  Log4j:27 - ****************************************************************************************
+2020-05-31 21:47:39 INFO  Log4j:43 - Username textbox is found
+2020-05-31 21:47:39 INFO  Log4j:43 - Username: mngr262644 is entered.
+2020-05-31 21:47:39 INFO  Log4j:43 - Password textbox is found
+2020-05-31 21:47:39 INFO  Log4j:43 - Password: Ahudume is entered
+2020-05-31 21:47:39 INFO  Log4j:43 - Login button is found
+2020-05-31 21:47:40 INFO  Log4j:43 - Click action is performed on Submit button
