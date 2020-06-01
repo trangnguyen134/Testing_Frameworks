@@ -7,9 +7,9 @@ import com.base.BaseTest;
 import com.pageObjects.Page_Login;
 import com.utilities.Log4j;
 
-public class App_Login extends BaseTest {
+public class Login extends BaseTest {
 
-	public static void Execute(WebDriver driver, String sUsername, String sPassword) throws Exception {
+	public static void Execute(String sUsername, String sPassword) throws Exception {
 
 		Page_Login.txt_userName(driver).clear();
 		Page_Login.txt_userName(driver).sendKeys(sUsername);

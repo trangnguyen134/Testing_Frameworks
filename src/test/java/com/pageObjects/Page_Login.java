@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.base.BaseTest;
-import com.utilities.Log4j;
 
 public class Page_Login extends BaseTest {
 
 	private static WebElement element = null;
 
+	/** Web El**/
 	public static WebElement txt_userName(WebDriver driver) {
 		element = driver.findElement(By.name("uid"));
 		return element;

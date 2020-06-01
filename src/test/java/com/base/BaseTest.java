@@ -59,7 +59,7 @@ public class BaseTest {
 	}
 
 	@SuppressWarnings("deprecation")
-	public void setDriver() {
+	private void setDriver() {
 
 		/* INITIATE WEB BROWSER TO EXECUTE TEST */
 		switch (Constants.BROWSER.toLowerCase()) {
@@ -129,11 +129,18 @@ public class BaseTest {
 	}
 
 	@AfterClass
-	public static void closeBrowser() {
-		softAssert.assertAll();
+	public void closeBrowser() {
 		driver.quit();
+	}
+	public void tearDown () {
+		//driver.quit();
+		softAssert.assertAll();
 		Log4j.endTestCase();
 	}
+
+	/*
+	 * public void tearDown() { softAssert.assertAll(); Log4j.endTestCase(); }
+	 */
 
 	/*** LOG4J: SET LOG FILE NAME ***/
 	private void setLog4j(String className) {

@@ -3,13 +3,13 @@ package com.testCases;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.appObjects.App_Login;
+import com.appObjects.Login;
 import com.base.BaseTest;
 import com.utilities.Constants;
 import com.utilities.Log4j;
@@ -25,31 +25,26 @@ public class VerifyLogIn extends BaseTest {
 		return data;
 	}
 
-	/*
-	 * @BeforeTest public void init() {
-	 * 
-	 * }
-	 */
-
 	@BeforeMethod
 	public void setup() throws Exception {
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+
+		// WebDriver driver = new BaseTest().setDriver();
+
 		driver.get(Constants.WEB_URL);
 		Log4j.info("Lauching: " + Constants.WEB_URL);
-
 
 	}
 
 	@Test(dataProvider = "Authentication")
 	public void testRunner(String sUsername, String sPassword) throws Exception {
 
-
 		String actualBoxMsg;
 		String EXPECT_ERROR = "User or Password is not valid";
 
-		App_Login.Execute(driver, sUsername, sPassword);
-
+		Login.Execute(sUsername, sPassword);
 
 		try {
 
@@ -60,8 +55,8 @@ public class VerifyLogIn extends BaseTest {
 			softAssert.assertEquals(actualBoxMsg, EXPECT_ERROR);
 
 		} catch (NoAlertPresentException Ex) {
-			// Get text displayes on login page
 
+			// Get text displays on login page
 			String expectedText = driver.findElement(By.xpath("//tbody/tr[@class='heading3']")).getText();
 
 			softAssert.assertTrue(expectedText.contains(sUsername));
@@ -70,8 +65,8 @@ public class VerifyLogIn extends BaseTest {
 	}
 
 	@AfterMethod
-	public void tearDown() {
-		
+	public void teardown() throws Exception {
+		driver.quit();
 	}
 
 }

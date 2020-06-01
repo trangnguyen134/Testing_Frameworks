@@ -5,11 +5,11 @@
     <classes>
       <class name="com.testCases.VerifyLogIn">
         <methods>
-          <include name="tearDown"/>
+          <include name="closebrowser"/>
+          <include name="setup"/>
           <include name="setUp"/>
-          <include name="init"/>
-          <include name="testRunner" invocation-numbers="1"/>
-          <include name="CleanUp"/>
+          <include name="closeBrowser"/>
+          <include name="testRunner" invocation-numbers="0 3"/>
         </methods>
       </class> <!-- com.testCases.VerifyLogIn -->
     </classes>

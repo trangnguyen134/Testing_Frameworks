@@ -18,6 +18,19 @@ public class Page_Home extends BaseTest{
 		return element;
 	}
 	
+	public static WebElement btn_LogOut(WebDriver driver) {
+		 element = driver.findElement(By.xpath("//*[contains(text(),'Log out')]"));
+		Log4j.info("Log out is found");
+		return element;
+	}
+	
+	public static WebElement alert_LogOut(WebDriver driver) {
+		 element = driver.findElement(By.xpath("//*[text()='You Have Succesfully Logged Out!!']"));
+		 Log4j.info("Log out confirmation is displayed"); 
+		return element;
+		
+	}
+	
 	
 
 }
