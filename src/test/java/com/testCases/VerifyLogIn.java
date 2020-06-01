@@ -50,12 +50,6 @@ public class VerifyLogIn extends BaseTest {
 
 		App_Login.Execute(driver, sUsername, sPassword);
 
-		/*
-		 * Determine Pass Fail Status of the Script If login credentials are correct,
-		 * Alert(Pop up) is NOT present. An Exception is thrown and code in catch block
-		 * is executed If login credentials are invalid, Alert is present. Code in try
-		 * block is executed
-		 */
 
 		try {
 
