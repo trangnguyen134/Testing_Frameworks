@@ -1,5 +1,6 @@
 package com.utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,10 +11,13 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.compress.archivers.dump.InvalidFormatException;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -76,6 +80,31 @@ public class TestUtils extends BaseTest {
 	}
 
 	/*** END OF DATA DRIVER TESTING IMPLEMENTATION ***/
+
+	/*** START TAKE SCREENSHOT METHOD ***/
+
+	public static void takeScreenshot(String sTestCaseName) throws Exception {
+
+		String screenshotPath = new ResourceManager().getSCREENSHOT_PATH();
+		String filename = sTestCaseName + "_" + TestUtils.getTodayDateWithFormat("yyyy_MM_dd_HH_mm_ss");
+
+		TakesScreenshot scrShot = ((TakesScreenshot) BaseTest.driver);
+
+		File scrFile = scrShot.getScreenshotAs(OutputType.FILE);
+		File DestFile = new File(screenshotPath + filename + ".png");
+		
+		// Code to save screenshot at desired location
+		try {
+
+			FileUtils.copyFile(scrFile, DestFile);
+			Log4j.debug(DestFile.toString());
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/*** END OF TAKE SCREENSHOT METHOD ***/
 
 	/*** GET METHOD METHOD IMPLEMENTATION ***/
 	public static String getTodayDateWithFormat(String format) {

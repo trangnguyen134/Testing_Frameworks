@@ -132,8 +132,9 @@ public class BaseTest {
 	public void closeBrowser() {
 		driver.quit();
 	}
-	public void tearDown () {
-		//driver.quit();
+
+	public void tearDown() {
+		// driver.quit();
 		softAssert.assertAll();
 		Log4j.endTestCase();
 	}
@@ -153,8 +154,10 @@ public class BaseTest {
 	/* Add main class for debugging purpose. Will remove when completes */
 	public static void main(String[] args) {
 		String dataFilePath = new ResourceManager().getDATASET_SPREADSHEET_PATH();
+
 		System.out.println("Web Browser to execute: " + Constants.BROWSER);
 		System.out.println("Web Application to execute: " + Constants.WEB_URL);
 		System.out.println("File Path is: " + dataFilePath);
+
 	}
 }
