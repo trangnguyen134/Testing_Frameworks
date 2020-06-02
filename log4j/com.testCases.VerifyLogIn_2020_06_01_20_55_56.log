@@ -1,0 +1,24 @@
+2020-06-01 20:56:03 INFO  Log4j:43 - Maximize window to execute
+2020-06-01 20:56:03 INFO  Log4j:43 - Delete all cookies
+2020-06-01 20:56:03 INFO  Log4j:43 - Implicit wait applied on the driver for: 60
+2020-06-01 20:56:03 INFO  Log4j:19 - ****************************************************************************************
+2020-06-01 20:56:03 INFO  Log4j:21 - $$$$$$$$$$$$$$$$$$$$$            com.testCases.VerifyLogIn       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-01 20:56:03 INFO  Log4j:23 - $$$$$$$$$$$$$$$$$$$$$            windows 10       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-01 20:56:03 INFO  Log4j:25 - $$$$$$$$$$$$$$$$$$$$$            chrome       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-01 20:56:03 INFO  Log4j:27 - ****************************************************************************************
+2020-06-01 20:56:09 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-01 20:56:11 INFO  Log4j:43 - Username: mngr262644 is entered.
+2020-06-01 20:56:11 INFO  Log4j:43 - Password: Ahudume is entered
+2020-06-01 20:56:12 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-01 20:56:19 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-01 20:56:20 INFO  Log4j:43 - Username: invalid is entered.
+2020-06-01 20:56:22 INFO  Log4j:43 - Password: valid is entered
+2020-06-01 20:56:22 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-01 20:56:29 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-01 20:56:29 INFO  Log4j:43 - Username: valid is entered.
+2020-06-01 20:56:29 INFO  Log4j:43 - Password: invalid is entered
+2020-06-01 20:56:29 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-01 20:56:35 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-01 20:56:36 INFO  Log4j:43 - Username: invalid is entered.
+2020-06-01 20:56:37 INFO  Log4j:43 - Password: invalid is entered
+2020-06-01 20:56:37 INFO  Log4j:43 - Click action is performed on Submit button
