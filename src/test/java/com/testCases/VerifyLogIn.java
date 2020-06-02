@@ -1,20 +1,16 @@
 package com.testCases;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.File;
+import java.util.concurrent.TimeUnit;
+
 import com.appObjects.Login;
 import com.appObjects.Logout;
 import com.base.BaseTest;
@@ -45,6 +41,7 @@ public class VerifyLogIn extends BaseTest {
 		// WebDriver driver = new BaseTest().setDriver();
 
 		driver.get(Constants.WEB_URL);
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITLY_WAIT, TimeUnit.SECONDS);
 		Log4j.info("Lauching: " + Constants.WEB_URL);
 
 	}
@@ -74,13 +71,15 @@ public class VerifyLogIn extends BaseTest {
 			softAssert.assertTrue(expectedText.contains(sUsername));
 			TestUtils.takeScreenshot(sTestCaseName);
 
-		//	Logout.Execute();
+			// Logout.Execute();
 
 		}
 	}
 
-	@AfterTest
+	@AfterMethod
+
 	public void teardown() throws Exception {
+		Log4j.endTestCase();
 		driver.quit();
 	}
 

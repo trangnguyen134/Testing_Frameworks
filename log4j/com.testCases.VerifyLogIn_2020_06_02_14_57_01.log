@@ -1,0 +1,26 @@
+2020-06-02 14:57:08 INFO  Log4j:43 - Maximize window to execute
+2020-06-02 14:57:08 INFO  Log4j:43 - Delete all cookies
+2020-06-02 14:57:08 INFO  Log4j:43 - Implicit wait applied on the driver for: 60
+2020-06-02 14:57:08 INFO  Log4j:19 - ****************************************************************************************
+2020-06-02 14:57:08 INFO  Log4j:21 - $$$$$$$$$$$$$$$$$$$$$            com.testCases.VerifyLogIn       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-02 14:57:08 INFO  Log4j:23 - $$$$$$$$$$$$$$$$$$$$$            windows 10       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-02 14:57:08 INFO  Log4j:25 - $$$$$$$$$$$$$$$$$$$$$            chrome       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-02 14:57:08 INFO  Log4j:27 - ****************************************************************************************
+2020-06-02 14:57:15 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-02 14:57:16 INFO  Log4j:43 - Username: mngr262644 is entered.
+2020-06-02 14:57:16 INFO  Log4j:43 - Password: Ahudume is entered
+2020-06-02 14:57:16 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-02 14:57:26 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-02 14:57:27 INFO  Log4j:43 - Username: invalid is entered.
+2020-06-02 14:57:27 INFO  Log4j:43 - Password: valid is entered
+2020-06-02 14:57:28 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-02 14:57:29 INFO  Log4j:93 - [debug] D:\Ammie\Study\Selenium_Cert\EclipseRepo\Testing_Frameworks\screenshots\com.testCases.VerifyLogIn_2020_06_02_14_57_28.png
+2020-06-02 14:57:38 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-02 14:57:39 INFO  Log4j:43 - Username: valid is entered.
+2020-06-02 14:57:42 INFO  Log4j:43 - Password: invalid is entered
+2020-06-02 14:57:43 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-02 14:57:51 INFO  Log4j:43 - Lauching: http://www.demo.guru99.com/V4/
+2020-06-02 14:57:52 INFO  Log4j:43 - Username: invalid is entered.
+2020-06-02 14:57:56 INFO  Log4j:43 - Password: invalid is entered
+2020-06-02 14:57:56 INFO  Log4j:43 - Click action is performed on Submit button
+2020-06-02 14:57:58 INFO  Log4j:35 - $$$$$$$$$$$$$$$$$$$$$$$$$          -E---N---D-       $$$$$$$$$$$$$$$$$$$$$$$$$

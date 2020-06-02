@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-02T20:18:10Z" name="Default suite" finished-at="2020-06-02T20:25:04Z" duration-ms="414085">
+  <suite started-at="2020-06-02T21:38:25Z" name="Default suite" finished-at="2020-06-02T21:38:59Z" duration-ms="34013">
     <groups>
     </groups>
-    <test started-at="2020-06-02T20:18:10Z" name="Default test" finished-at="2020-06-02T20:25:04Z" duration-ms="414085">
-      <class name="com.testCases.VerifyLogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:10Z" name="setUp" finished-at="2020-06-02T20:18:17Z" duration-ms="6873" status="PASS">
+    <test started-at="2020-06-02T21:38:25Z" name="Default test" finished-at="2020-06-02T21:38:59Z" duration-ms="34013">
+      <class name="com.testCases.GuruSample">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:25Z" name="setUp" finished-at="2020-06-02T21:38:31Z" duration-ms="6518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:18Z" name="setup" finished-at="2020-06-02T20:18:24Z" duration-ms="6425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:24Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T20:18:28Z" duration-ms="3801" status="FAIL">
+        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:31Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:34Z" duration-ms="2618" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,44 +24,49 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase05 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:34Z" name="tearDown" finished-at="2020-06-02T21:38:35Z" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:35Z" name="setUp" finished-at="2020-06-02T21:38:42Z" duration-ms="6763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:42Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:42Z" duration-ms="896" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[@class='heading3']"}
-  (Session info: chrome=83.0.4103.61)
+              <![CDATA[Cannot locate an element using tag name=tbody
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c31b2c4b82a982d58aba112eeabd042d
-*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}]]>
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[@class='heading3']"}
-  (Session info: chrome=83.0.4103.61)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using tag name=tbody
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c31b2c4b82a982d58aba112eeabd042d
-*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
+at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.testCases.VerifyLogIn.testRunner(VerifyLogIn.java:73)
+at com.testCases.GuruSample.testCase05(GuruSample.java:126)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,32 +97,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRunner -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:28Z" name="setup" finished-at="2020-06-02T20:18:35Z" duration-ms="6648" status="PASS">
+        </test-method> <!-- testCase05 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:42Z" name="tearDown" finished-at="2020-06-02T21:38:43Z" duration-ms="726" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:35Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T20:18:45Z" duration-ms="10479" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[valid]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:43Z" name="setUp" finished-at="2020-06-02T21:38:50Z" duration-ms="6719" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRunner -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:45Z" name="setup" finished-at="2020-06-02T20:18:52Z" duration-ms="6636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:18:52Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T20:24:54Z" duration-ms="362424" status="FAIL">
+        </test-method> <!-- setUp -->
+        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:50Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:52Z" duration-ms="1835" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,75 +119,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b1704a0be762e2e5b88c67731c4e2862]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b1704a0be762e2e5b88c67731c4e2862
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at com.utilities.TestUtils.takeScreenshot(TestUtils.java:93)
-at com.testCases.VerifyLogIn.testRunner(VerifyLogIn.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRunner -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:24:54Z" name="setup" finished-at="2020-06-02T20:25:01Z" duration-ms="7093" status="PASS">
+        </test-method> <!-- testCase05 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:52Z" name="tearDown" finished-at="2020-06-02T21:38:52Z" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:25:01Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T20:25:03Z" duration-ms="2078" status="FAIL">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:53Z" name="setUp" finished-at="2020-06-02T21:38:57Z" duration-ms="4961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:57Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:58Z" duration-ms="644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,84 +143,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[@class='heading3']"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0a5f84e31c9c7e859e4bf285bc967347
-*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[@class='heading3']"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0a5f84e31c9c7e859e4bf285bc967347
-*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.testCases.VerifyLogIn.testRunner(VerifyLogIn.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRunner -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:25:03Z" name="closeBrowser" finished-at="2020-06-02T20:25:04Z" duration-ms="923" status="PASS">
+        </test-method> <!-- testCase05 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:58Z" name="tearDown" finished-at="2020-06-02T21:38:59Z" duration-ms="771" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.VerifyLogIn@48f2bd5b]" started-at="2020-06-02T20:25:04Z" name="teardown" finished-at="2020-06-02T20:25:04Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.testCases.VerifyLogIn -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testCases.GuruSample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
