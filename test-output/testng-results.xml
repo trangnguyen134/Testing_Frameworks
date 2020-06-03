@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-02T21:38:25Z" name="Default suite" finished-at="2020-06-02T21:38:59Z" duration-ms="34013">
+  <suite started-at="2020-06-02T21:49:32Z" name="Default suite" finished-at="2020-06-02T22:31:17Z" duration-ms="2505750">
     <groups>
     </groups>
-    <test started-at="2020-06-02T21:38:25Z" name="Default test" finished-at="2020-06-02T21:38:59Z" duration-ms="34013">
-      <class name="com.testCases.GuruSample">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:25Z" name="setUp" finished-at="2020-06-02T21:38:31Z" duration-ms="6518" status="PASS">
+    <test started-at="2020-06-02T21:49:32Z" name="Default test" finished-at="2020-06-02T22:31:17Z" duration-ms="2505750">
+      <class name="com.testCases.VerifyLogIn">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:32Z" name="setUp" finished-at="2020-06-02T21:49:38Z" duration-ms="6892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:31Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:34Z" duration-ms="2618" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:39Z" name="setup" finished-at="2020-06-02T21:49:47Z" duration-ms="7432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:47Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T21:49:51Z" duration-ms="3688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,16 +30,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:34Z" name="tearDown" finished-at="2020-06-02T21:38:35Z" duration-ms="763" status="PASS">
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:51Z" name="teardown" finished-at="2020-06-02T21:49:51Z" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:35Z" name="setUp" finished-at="2020-06-02T21:38:42Z" duration-ms="6763" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:51Z" name="setup" finished-at="2020-06-02T21:49:57Z" duration-ms="5817" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:42Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:42Z" duration-ms="896" status="FAIL">
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:49:57Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T21:50:00Z" duration-ms="2837" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,25 +52,90 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:00Z" name="teardown" finished-at="2020-06-02T21:50:01Z" duration-ms="1429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:01Z" name="setup" finished-at="2020-06-02T21:50:09Z" duration-ms="7747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:09Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T21:50:12Z" duration-ms="2438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:12Z" name="teardown" finished-at="2020-06-02T21:50:12Z" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:12Z" name="setup" finished-at="2020-06-02T21:50:18Z" duration-ms="6008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRunner(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T21:50:18Z" name="testRunner" data-provider="Authentication" finished-at="2020-06-02T22:31:16Z" duration-ms="2457568" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Cannot locate an element using tag name=tbody
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[disconnected: Unable to receive message from renderer
+  (Session info: chrome=83.0.4103.61)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62595}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 247c4dc8b4993bb5907e15ca41679e3f
+*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using tag name=tbody
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (Session info: chrome=83.0.4103.61)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-5NE9LR9', ip: '10.1.65.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
-at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Ammie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62595}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 247c4dc8b4993bb5907e15ca41679e3f
+*** Element info: {Using=xpath, value=//tbody/tr[@class='heading3']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.testCases.GuruSample.testCase05(GuruSample.java:126)
+at com.testCases.VerifyLogIn.testRunner(VerifyLogIn.java:69)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,63 +163,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:42Z" name="tearDown" finished-at="2020-06-02T21:38:43Z" duration-ms="726" status="PASS">
+        </test-method> <!-- testRunner -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T22:31:16Z" name="teardown" finished-at="2020-06-02T22:31:17Z" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:43Z" name="setUp" finished-at="2020-06-02T21:38:50Z" duration-ms="6719" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testCases.VerifyLogIn@34a3d150]" started-at="2020-06-02T22:31:17Z" name="closeBrowser" finished-at="2020-06-02T22:31:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:50Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:52Z" duration-ms="1835" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[valid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:52Z" name="tearDown" finished-at="2020-06-02T21:38:52Z" duration-ms="764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:53Z" name="setUp" finished-at="2020-06-02T21:38:57Z" duration-ms="4961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCase05(java.lang.String, java.lang.String)[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:57Z" name="testCase05" data-provider="GuruTest" finished-at="2020-06-02T21:38:58Z" duration-ms="644" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testCases.GuruSample@799f10e1]" started-at="2020-06-02T21:38:58Z" name="tearDown" finished-at="2020-06-02T21:38:59Z" duration-ms="771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testCases.GuruSample -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testCases.VerifyLogIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

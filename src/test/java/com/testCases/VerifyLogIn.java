@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import com.appObjects.Login;
-import com.appObjects.Logout;
+
 import com.base.BaseTest;
 import com.utilities.Constants;
 import com.utilities.Log4j;
@@ -21,7 +21,6 @@ import com.utilities.TestUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Test
 public class VerifyLogIn extends BaseTest {
 
 	String screenshotPath = new ResourceManager().getSCREENSHOT_PATH();
