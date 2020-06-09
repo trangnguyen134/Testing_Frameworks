@@ -23,8 +23,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class VerifyLogIn extends BaseTest {
 
-	String screenshotPath = new ResourceManager().getSCREENSHOT_PATH();
-
 	@DataProvider(name = "Authentication")
 	public static Object[][] getTestDataSet() {
 		Object data[][] = new TestUtils().getTestData("test_accounts");

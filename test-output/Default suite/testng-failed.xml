@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testCases.VerifyLogIn">
+      <class name="vapr182.Question1">
         <methods>
-          <include name="setup"/>
           <include name="setUp"/>
-          <include name="teardown"/>
-          <include name="closeBrowser"/>
-          <include name="testRunner" invocation-numbers="3"/>
+          <include name="searchFunction"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.testCases.VerifyLogIn -->
+      </class> <!-- vapr182.Question1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
